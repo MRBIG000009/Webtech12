@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine Informatique - Rappel #1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e9f7e9;
+        }
+
+        header {
+            background-color: #2e7d32;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        h2 {
+            color: #2e7d32;
+        }
+
+        section {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2e7d32;
+            color: #fff;
+            
+            bottom: 0;
+            
+        }
+
+        a {
+            color: #2e7d32;
+            text-decoration: none;
+        }
+
+        .code {
+            background-color: #f4f4f4;
+            border-left: 4px solid #2e7d32;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        pre {
+            background: #eee;
+            padding: 10px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rappel #1</h1>
+    </header>
+
+    <div class="container">
+        <!-- Première section -->
+        <section>
+            <h2>C'est quoi un site web ?</h2>
+            <p>Un site web est un ensemble de pages connectées entre elles via des liens hypertextes, accessible via Internet. Il peut contenir du texte, des images, des vidéos et d'autres éléments interactifs.</p>
+            
+            <h2>Quel est son utilité ?</h2>
+            <p>Les sites web sont utilisés pour fournir des informations, interagir avec des utilisateurs, vendre des produits, ou encore pour offrir des services en ligne.</p>
+
+            <h2>Les méthodes pour créer un site web</h2>
+            <p>Il existe deux grandes méthodes pour créer un site web :</p>
+            <ul>
+                <li><strong>Code :</strong> Cela consiste à utiliser un langage informatiquet pour construire un site.</li>
+                <li><strong>No Code :</strong> Utiliser des plateformes comme Wix, WordPress ou Webflow qui permettent de créer des sites sans avoir à écrire de code.</li>
+            </ul>
+        </section>
+
+        <!-- Deuxième section -->
+        <section>
+            <h2>Les méthodes pour créer un site web avec du code</h2>
+            <p>Voici les langages de base requis pour créer un site web avec du code :</p>
+            <ul>
+                <li><strong>HTML :</strong> Le langage de balisage qui structure la page.</li>
+                <li><strong>CSS :</strong> Permet de styliser les éléments HTML.</li>
+                <li><strong>JavaScript :</strong> Rend la page interactive.</li>
+            </ul>
+
+            <h3>HTML</h3>
+            <p>Le HTML (HyperText Markup Language) est utilisé pour structurer le contenu d'un site. Chaque élément est représenté par une balise.</p>
+
+            <h3>Balises ouvrantes et fermantes</h3>
+            <p>En HTML, la plupart des éléments sont entourés de balises ouvrantes et fermantes. Une balise ouvrante indique le début d'un élément, tandis qu'une balise fermante marque la fin de cet élément. Exemple :</p>
+            <div class="code">
+                <pre>&lt;p&gt;Ceci est un paragraphe&lt;/p&gt;</pre>
+            </div>
+            <p>Ici, <code>&lt;p&gt;</code> est la balise ouvrante et <code>&lt;/p&gt;</code> est la balise fermante.</p>
+
+            <h3>Balises HTML courantes</h3>
+            <p>Voici quelques balises de base utilisées dans la création de sites web :</p>
+            <ul>
+                <li><code>&lt;h1&gt; - &lt;h6&gt;</code> : Balises de titre</li>
+                <li><code>&lt;p&gt;</code> : Balise de paragraphe</li>
+                <li><code>&lt;a&gt;</code> : Balise pour les liens</li>
+                <li><code>&lt;button&gt;</code> : Balise pour les boutons</li>
+                <li><code>&lt;form&gt;</code> : Balise pour les formulaires</li>
+                <li><code>&lt;div&gt;</code> : Balise pour les sections de page</li>
+                <li><code>&lt;nav&gt;</code> : Balise pour les barres de navigation</li>
+            </ul>
+
+            <h3>Relier deux pages HTML</h3>
+            <p>Pour relier deux pages HTML, on utilise la balise <code>&lt;a&gt;</code> :</p>
+            <div class="code">
+                <pre>&lt;a href="page2.html"&gt;Aller à la deuxième page&lt;/a&gt;</pre>
+            </div>
+
+            <h3>Styliser une page HTML</h3>
+            <p>On peut ajouter du CSS directement dans le HTML en utilisant la balise <code>&lt;style&gt;</code> :</p>
+            <div class="code">
+                <pre>&lt;style&gt;
+body {
+    background-color: #e9f7e9;
+    color: #333;
+}
+&lt;/style&gt;</pre>
+            </div>
+
+            <h3>Propriétés CSS courantes</h3>
+            <p>Voici quelques propriétés CSS importantes pour styliser vos pages :</p>
+            <ul>
+                <li><code>color</code> : Modifier la couleur du texte</li>
+                <li><code>padding</code> : Ajouter de l'espace intérieur à un élément</li>
+                <li><code>margin</code> : Ajouter de l'espace extérieur à un élément</li>
+                <li><code>border</code> : Ajouter une bordure autour d'un élément</li>
+                <li><code>border-radius</code> : Arrondir les coins d'un élément</li>
+                <li><code>display</code> : Modifier la façon dont un élément est affiché (block, inline, flex, etc.)</li>
+            </ul>
+        </section>
+
+        <!-- Message pour la suite -->
+        <section>
+            <h2>Prochaine partie à venir...</h2>
+            
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 WebTech Community  |<br> Prochaine édition bientôt disponible
+    </footer>
+</body>
+</html>
